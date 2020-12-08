@@ -1,0 +1,41 @@
+.site {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+			"title"
+			"main"
+			"sidebar"
+			"footer";
+}
+@media screen and (min-width: 600px) {
+.site {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 2fr 10fr 1fr;
+	grid-template-areas:
+			"title title"
+			"main-content sidebar"
+			"footer footer";
+	}
+}
+.masthead {
+	grid-area: masthead;
+}
+
+.page-title {
+	grid-area: title;
+	background-color: green;
+}
+
+.main-content {
+	grid-area: main;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+.footer-content {
+	grid-area: footer;
+}
