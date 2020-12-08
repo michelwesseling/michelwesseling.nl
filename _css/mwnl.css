@@ -80,6 +80,10 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+.copyright{
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
 
 @media (min-width: 48em) {
   .masthead-brand {
